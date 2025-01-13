@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "PublicTransitMapper",
+            "request": "launch",
+            "mainClass": "org.matsim.pt2matsim.run.PublicTransitMapper",
+            "args": "example\\GrenobleOsm2MatsimNetwork\\test\\ptconfig.xml"
+        },
+        {
+            "type": "java",
+            "name": "CreateDefaultPTMapperConfig",
+            "request": "launch",
+            "mainClass": "org.matsim.pt2matsim.run.CreateDefaultPTMapperConfig",
+            "args": "example\\GrenobleOsm2MatsimNetwork\\test\\ptconfig.xml"
+        },
+        {
+            "type": "java",
+            "name": "Osm2TransitSchedule",
+            "request": "launch",
+            "mainClass": "org.matsim.pt2matsim.run.Osm2TransitSchedule",
+            "args": "example\\input\\big_grenoble.osm.gz example\\GrenobleOsm2MatsimNetwork\\test\\schedule.xml EPSG:4326"
+        },
+        {
+            "type": "java",
+            "name": "Osm2MultimodalNetwork",
+            "request": "launch",
+            "mainClass": "org.matsim.pt2matsim.run.Osm2MultimodalNetwork",
+            "projectName": "pt2matsim",
+            "args": "example\\GrenobleOsm2MatsimNetwork\\test\\testconfig.xml"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CreateDefaultOsmConfig",
+            "request": "launch",
+            "mainClass": "org.matsim.pt2matsim.run.CreateDefaultOsmConfig",
+            "projectName": "pt2matsim",
+            "args": "example\\GrenobleOsm2MatsimNetwork\\test\\testconfig.xml"
+        }
+    ]
+}
